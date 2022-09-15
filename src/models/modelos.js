@@ -8,6 +8,15 @@ class Projeto{
     }
 }
 
+class Pessoa{
+    constructor(nome, descricao, cursos){
+        this.nome = nome
+        this.descricao = descricao
+        this.cursos = cursos
+    }
+}
+
 module.exports = {
-    Projeto: Projeto
+    Projeto: Projeto,
+    Pessoa: Pessoa
 }  

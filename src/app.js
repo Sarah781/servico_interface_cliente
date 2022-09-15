@@ -12,6 +12,7 @@ const port = 5000;
 /* importando o modelo */
 const modelo = require('./models/modelos');
 var Projeto = modelo.Projeto; //Vinculação de tipo
+var Pessoa = modelo.Pessoa;
 
 
 /* Configurando a template engine. */
@@ -27,14 +28,19 @@ app.get('/portfolio', listProjectHandler);
 
 app.listen(port, listenHandler);
 
+/* Os dados a seguir, em uma aplicação real, deveriam vir de um BD */
+function aboutMe() {
+    return new Pessoa("Sarah", "Só quero me formar logo", ["nervo"]);
+}
+
+
 function aboutHandler(req, res){
-    res.render('sobre_mim.ejs');    
+    res.render('sobre_mim.ejs', {pessoa: aboutMe()});    
 }
 
 /* Os dados a seguir, em uma aplicação real, deveriam vir de um BD */
 function listProjects() {
     return [
-        new Projeto("CyberMind", "JavaScript", 2020, 2020),
         new Projeto("GSW", "C#", 2021, 2021),
         new Projeto("IonicHealth", "C#", 2021, 2021),
         new Projeto("SrSoja", "React Native", 2022, 2022),
