@@ -4,6 +4,7 @@ de diretórios organizada.
 Autor: Sarah
 */
 
+
 /* importando o express */
 const express = require('express')
 const app = express();
@@ -30,7 +31,7 @@ app.listen(port, listenHandler);
 
 /* Os dados a seguir, em uma aplicação real, deveriam vir de um BD */
 function aboutMe() {
-    return new Pessoa("Sarah", "👩🏽‍🎓 21 anos 🎓 Faculdade: Análise e Desenvolvimento de Sistemas 💼 Trabalho/Estágio: Faturamento na EDP São Paulo", ["Tecnica em ADM-ETEC", "Operador de IA-IBM", "Noções Básicas de Prgramação na WEB-Cephas", "Maratona do 0 ao Código-Kenzie Academy", "Robótica-EducaSP", "M001: MongoDB Basics", "M220P: MongoDB for Python Developers"]);
+    return new Pessoa("SARAH SANTANA", "👩🏽‍🎓 21 anos 🎓 Faculdade: Análise e Desenvolvimento de Sistemas 💼 Trabalho/Estágio: Faturamento na EDP São Paulo", ["Tecnica em ADM-ETEC", "Operador de IA-IBM", "Noções Básicas de Prgramação na WEB-Cephas", "Maratona do 0 ao Código-Kenzie Academy", "Robótica-EducaSP", "M001: MongoDB Basics", "M220P: MongoDB for Python Developers"]);
 }
 
 

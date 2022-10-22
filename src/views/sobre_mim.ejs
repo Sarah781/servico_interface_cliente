@@ -1,14 +1,23 @@
 <%# A linha abaixo carrega no template o conteúdo total do arquivo header.ejs%>
 <%-include('base_header') -%>
+
 <body>
     <%-include('base_menu') -%>
     <div>
         <h2><%= pessoa.nome%></h2>
+    
         <div>
+
+            <div text=foto>
+                <img src="https://avatars.githubusercontent.com/u/72801105?v=4" alt="Foto"
+                width="200px"> 
+            </div>
+            
+
             <p><%= pessoa.descricao%></p>
         </div>
         <div>
-            <p>Cursos:</p>
+            <p>CURSOS:</p>
             <% for (var i = 0; i < pessoa.cursos.length; i++) { %>
                 <p><%= pessoa.cursos[i] %></li>
             <% } %>

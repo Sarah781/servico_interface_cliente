@@ -1,10 +1,13 @@
 /* Exemplo de CSS servido estaticamente pelo Express.
 Autor: Sarah
 */
+
+
+
 body {
 	font-size: 12px;
     font-family: 'Cherry Swash', cursive;
-	background: rgb(129, 127, 255);
+	background-image: linear-gradient(blue, purple, green);
 }
 
 
@@ -30,21 +33,11 @@ li{
 
 .descritor{
     font-weight: bold;
+    font-family: 'Lobster Two', cursive;
 }
 
 nav {
 	margin: 27px auto 0;
-
-	position: relative;
-	width: 250px;
-	height: 50px;
-	background-color: #34495e;
-	border-radius: 8px;
-	font-size: 0;
-}
-nav {
-	margin: 27px auto 0;
-
 	position: relative;
 	width: 250px;
 	height: 50px;
@@ -65,6 +58,7 @@ nav a {
 	color: white;
 	cursor: pointer;
 }
+
 nav .animation {
 	position: absolute;
 	height: 100%;
@@ -73,9 +67,11 @@ nav .animation {
 	transition: all .5s ease 0s;
 	border-radius: 8px;
 }
+
 a:nth-child(1) {
 	width: 110px;
 }
+
 a:nth-child(2) {
 	width: 140px;
 }
@@ -85,6 +81,7 @@ nav .start-sobre-mim, a:nth-child(1):hover~.animation {
 	left: 0;
 	background-color: #122b9c;
 }
+
 nav .start-portfolio, a:nth-child(2):hover~.animation {
 	width: 110px;
 	left: 125px;
@@ -99,7 +96,7 @@ h1 {
 	font-size: 30px;
 	color: #ecf0f1;
 	text-shadow: 2px 2px 4px #181a63;
-	font-family: 'Cherry Swash', cursive;
+	font-family: 'Lobster Two', cursive;
 }
 
 span {
@@ -113,13 +110,24 @@ a {
     text-decoration: none;
     
   }
-  /*p {
-    position: absolute;
+
+  p {
     bottom: 20px;
     width: 100%;
-    text-align: center;
-    color: #ecf0f1;
     font-family: 'Cherry Swash',cursive;
     font-size: 20px;
 }
-*/
+
+.parallax { 
+    padding:2em 0em; 
+    height:auto; 
+    background:url(../img/fundo-parallax.jpg); 
+    background-position:center top; 
+    background-repeat:no-repeat; 
+    background-size:cover; 
+    background-attachment:fixed; 
+    color:#fff; 
+    text-align:center; 
+    position:relative; 
+}
+.parallax .content { float:left; padding:3em 0; }
