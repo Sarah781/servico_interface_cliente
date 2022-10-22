@@ -118,16 +118,3 @@ a {
     font-size: 20px;
 }
 
-.parallax { 
-    padding:2em 0em; 
-    height:auto; 
-    background:url(../img/fundo-parallax.jpg); 
-    background-position:center top; 
-    background-repeat:no-repeat; 
-    background-size:cover; 
-    background-attachment:fixed; 
-    color:#fff; 
-    text-align:center; 
-    position:relative; 
-}
-.parallax .content { float:left; padding:3em 0; }
