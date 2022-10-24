@@ -7,9 +7,9 @@ Autor: Sarah
 body {
 	font-size: 12px;
     font-family: 'Cherry Swash', cursive;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #b316da, #6712f0, #1420d3, #00e1ff);
 	background-size: 400% 400%;
-    animation: gradient 60s ease infinite;
+    animation: gradient 30s ease infinite;
     height: 100vh;
 }
 
@@ -36,29 +36,35 @@ li{
     margin-left: auto;
     margin-right: auto;
     margin-top: 10pt;
-    width: 140pt;
-    height: 140pt;
-    background-color: rgb(105, 54, 119);
-    /*border-radius: 20%;*/
+    width: 200pt;
+    height: 60pt;
+    background-color: rgb(148, 76, 168);
+    border-radius: 15%;
     text-align: center;
-    padding-top: 70pt;
-    /*border-color: black;*/
-    border-style: solid;
+    padding-top: 10pt;
+    border-style:dashed;
+	border-color: #fff;
 }
 
 
 .descritor{
     font-weight: bold;
     font-family: 'Lobster Two', cursive;
+	font-size: 20px;
+}
+
+
+.nome {
+	color: #fff;	
 
 }
 
 
 
 nav {
-	margin: 27px auto 0;
+	margin: 25px auto 0;
 	position: relative;
-	width: 250px;
+	width: 236px;
 	height: 50px;
 	background-color: #34495e;
 	border-radius: 8px;
@@ -92,13 +98,14 @@ a:nth-child(1) {
 }
 
 a:nth-child(2) {
-	width: 140px;
+	width: 126px;
 }
 
 nav .start-sobre-mim, a:nth-child(1):hover~.animation {
 	width: 110px;
 	left: 0;
 	background-color: #122b9c;
+	
 }
 
 nav .start-portfolio, a:nth-child(2):hover~.animation {
@@ -110,9 +117,7 @@ nav .start-portfolio, a:nth-child(2):hover~.animation {
 
 h1 {
 	text-align: center;
-	/*margin: 40px 0 40px;*/
-	text-align: center;
-	font-size: 30px;
+	font-size: 50px;
 	color: #ecf0f1;
 	text-shadow: 2px 2px 4px #181a63;
 	font-family: 'Lobster Two', cursive;
@@ -135,12 +140,24 @@ a {
     width: 100%;
     font-family: 'Cherry Swash',cursive;
     font-size: 20px;
+	color:#fff;
 }
 
 .titulo {
-	margin-top: 50px;
+	margin-top: 20px;
+	background-color: #8268e4;
+	border-radius: 200px;
+	text-decoration:underline;
+	margin-left: 200px;
+	margin-right: 200px;
+
 }
 
-.bloco {
-	margin-top: 50px;
-}
+/*container{
+        background-color: rgb(68, 20, 64);
+        margin-left:20px;
+		margin-right: 20px;
+		border-radius:5px
+    }
+	*/
+

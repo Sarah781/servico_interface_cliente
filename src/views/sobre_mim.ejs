@@ -8,21 +8,30 @@
 
     <!--meu nome-->
     <center>
+        <div style="font-size: 25px;">
+        <div class="nome">
         <h2><%= pessoa.nome%></h2>
+    </div>
+    </div>
     </center>
 
-        <div>
             <div>
                <!--imagem -->
-                <center>
+               <center>
+                    <div class="foto">
                 <img src="<%= pessoa.imagem %>" alt="Foto"
-                width="200px" > 
+                width="200px"> 
+            </div>
             </center>
+
+
             </div>
             
             <!--descrição sobre mim-->
+
+            <center>
             <p><%= pessoa.descricao%></p>
-        </div>
+        </center>
 
         <!--titulo -->
         <div class="titulo">
@@ -30,13 +39,12 @@
             <p>CURSOS:</p>
         </center>
 
-
-        <div class="bloco">
+        <center>
             <% for (var i = 0; i < pessoa.cursos.length; i++) { %>
                 <p><%= pessoa.cursos[i] %></li>
             <% } %>
-        </div>
-        </div>
+        </center>
+</div>
     </div>
 
 </body>
