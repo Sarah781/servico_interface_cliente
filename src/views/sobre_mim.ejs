@@ -2,27 +2,45 @@
 <%-include('base_header') -%>
 
 <body>
-    <%-include('base_menu') -%>
-    <div>
-        <h2><%= pessoa.nome%></h2>
-    
-        <div>
 
-            <div text=foto>
-                <img src="https://avatars.githubusercontent.com/u/72801105?v=4" alt="Foto"
-                width="200px"> 
+    <%-include('base_menu') -%>
+    <div class="nome">
+
+    <!--meu nome-->
+    <center>
+        <h2><%= pessoa.nome%></h2>
+    </center>
+
+        <div>
+            <div>
+               <!--imagem -->
+                <center>
+                <img src="<%= pessoa.imagem %>" alt="Foto"
+                width="200px" > 
+            </center>
             </div>
             
-
+            <!--descrição sobre mim-->
             <p><%= pessoa.descricao%></p>
         </div>
-        <div>
+
+        <!--titulo -->
+        <div class="titulo">
+        <center>
             <p>CURSOS:</p>
+        </center>
+
+
+        <div class="bloco">
             <% for (var i = 0; i < pessoa.cursos.length; i++) { %>
                 <p><%= pessoa.cursos[i] %></li>
             <% } %>
         </div>
+        </div>
     </div>
+
 </body>
+
+
 <%# A linha abaixo carrega no template o conteúdo total do arquivo footer.ejs %>
 <%- include('base_footer') -%>

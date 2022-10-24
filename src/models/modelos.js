@@ -1,4 +1,4 @@
-class Projeto{
+class Projeto {
     constructor(tipo, tecnologia, inicio, fim){
         this.tipo = tipo;
         this.tecnologia = tecnologia;
@@ -8,9 +8,10 @@ class Projeto{
     }
 }
 
-class Pessoa{
-    constructor(nome, descricao, cursos){
+class Pessoa {
+    constructor(nome, imagem, descricao, cursos){
         this.nome = nome
+        this.imagem = imagem
         this.descricao = descricao
         this.cursos = cursos
     }
